@@ -4,4 +4,4 @@
 ### Operating Systems
 ### Database Systems
 ### Computer Networks
-### Informatiun Security Analysis
+### Information Security Analysis
