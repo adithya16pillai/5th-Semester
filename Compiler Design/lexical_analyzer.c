@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
+//identifies delimiters
 bool isDelimiter(char ch) {
     if (ch == ' ' || ch == '+' || ch == '-' || ch == '*' ||
         ch == '/' || ch == ',' || ch == ';' || ch == '>' ||
@@ -11,6 +11,7 @@ bool isDelimiter(char ch) {
         return (true);
     return (false);
 }
+//identifies operators
 bool isOperator(char ch) {
     if (ch == '+' || ch == '-' || ch == '*' ||
         ch == '/' || ch == '>' || ch == '<' ||
@@ -18,6 +19,7 @@ bool isOperator(char ch) {
         return (true);
     return (false);
 }
+//identifies identifiers
 bool validIdentifier(char* str) {
     if (str[0] == '0' || str[0] == '1' || str[0] == '2' ||
         str[0] == '3' || str[0] == '4' || str[0] == '5' ||
@@ -26,6 +28,7 @@ bool validIdentifier(char* str) {
         return (false);
     return (true);
 }
+//identifies keyword
 bool isKeyword(char* str) {
     if (!strcmp(str, "if") || !strcmp(str, "else") ||
         !strcmp(str, "while") || !strcmp(str, "do") ||
@@ -41,6 +44,7 @@ bool isKeyword(char* str) {
         return (true);
     return (false);
 }
+//identifies integer
 bool isInteger(char* str) {
     int i, len = strlen(str);
     if (len == 0)
@@ -54,6 +58,7 @@ bool isInteger(char* str) {
     }
     return (true);
 }
+//identifies a real number
 bool isRealNumber(char* str) {
     int i, len = strlen(str);
     bool hasDecimal = false;
