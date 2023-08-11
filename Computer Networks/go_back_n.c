@@ -2,7 +2,7 @@
 #include<stdlib.h> 
 #include<math.h> 
 #include<unistd.h> 
-
+ 
 int n,r; 
 struct frame { 
     char ack; 
