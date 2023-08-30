@@ -14,7 +14,7 @@ string crc(string input,string key){
 	}
 	return input.substr(n-key_len+1);
 }
-
+ 
 int main() {
 	string data,x;
 	cout << "Enter data: ";
