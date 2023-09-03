@@ -5,7 +5,7 @@
 
 #define MAX_STACK_SIZE 100
 #define MAX_INPUT_SIZE 100
-
+ 
 typedef struct {
     char left;
     char right[10];
