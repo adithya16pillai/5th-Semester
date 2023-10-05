@@ -5,7 +5,7 @@
 int main () {  
     char non_terminal;  
     char beta,alpha;  
-    int n;  
+    int n;    
     char pro[10][SIZE];  //Production
     int index=3; //The starting of the string after '->' which is the the third character
     printf("BY: 21BCE3546\n");
